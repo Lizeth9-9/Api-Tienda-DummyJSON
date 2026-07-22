@@ -65,9 +65,6 @@ function filtrarProductos(lista) {
       document.querySelector('#modalDescripcion').textContent = element.description;
       document.querySelector('#modalPrecio').textContent = element.price;
       document.querySelector('#modalCategoria').textContent = element.category;
-
-      document.querySelector('#modalGaleria').src = element.thumbnail;
-
       document.querySelector('#modal').classList.remove('oculto');
     });
 
@@ -76,7 +73,7 @@ function filtrarProductos(lista) {
     card.appendChild(categoria);
     card.appendChild(img);
     container.appendChild(card);
-    
+
   });
 }
 
